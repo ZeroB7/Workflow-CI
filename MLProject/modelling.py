@@ -2,7 +2,7 @@
 modelling.py
 ============
 Training model clustering menggunakan MLflow Project.
-Kriteria 3 - Basic | Kelas Membangun Sistem Machine Learning
+
 """
 
 import mlflow
@@ -28,7 +28,7 @@ OPTIMAL_K    = args.n_clusters
 RANDOM_STATE = args.random_state
 
 # ── Setup MLflow ──────────────────────────────────────────────────────
-mlflow.set_experiment("Mall-Customer-Clustering-CI")
+with mlflow.start_run(nested=True):
 
 
 def load_data(path: str) -> pd.DataFrame:
