@@ -1,0 +1,14 @@
+name: Mall-Customer-Clustering
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_clusters:
+        type: int
+        default: 5
+      random_state:
+        type: int
+        default: 42
+    command: "python modelling.py --n_clusters {n_clusters} --random_state {random_state}"

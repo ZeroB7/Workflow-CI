@@ -1,0 +1,17 @@
+code .gitignore
+```
+
+Isi dengan:
+```
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# MLflow local runs
+MLProject/mlruns/
+MLProject/artifacts/
+
+# OS
+.DS_Store
+Thumbs.db
